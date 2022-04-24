@@ -27,12 +27,15 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - allow access to objective variable properties from other packages
 - allow point variables from other packages
 - API method in objective API that starts and stops it per player
+- `menu` conversationIO option `npc_name_newline_separator`
 - `freeze` event - ProtocolLib compatibility feature: Blocks the player from moving for the specified amount of ticks.
 - `command` objective
 - `equip` objective
 - `delay` objective - now support variables
 - `opsudo` event - now supports variables
 - `variable` condition - now supports variables
+- `bossbar` notify style now supports variables for the `progress` argument
+- `delay` objective property: `rawSeconds`
 - Things that are also added in 1.12.X:
     - new line support for `journal_lore` in `messages.yml`
     - FastAsyncWorldEdit compatibility
@@ -133,6 +136,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
     - `command`, `sudo` and `opsudo` events - didn't work with conditions
     - `interact` objective - did not work with armorstands
     - `action` objective - for `any` block ignored location
+    - `weather` event - storm did not work
 ### Security
 - it was possible to put a QuestItem into a chest
 - bump log4j dependency 2.15.0 to fix CVE-2021-44228
